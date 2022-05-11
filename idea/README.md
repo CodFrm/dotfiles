@@ -3,9 +3,19 @@
 ## ideavim配置
 > nvim 太难配置了,养成的感觉主要还是键位,不如直接使用ideavim了
 
+### 常用
+
+- <leader>fw 搜索关键字
+- <leader>oa 选中所有相同关键字
+- <leader>on 选中下一个关键字
+
 ### 代码
 
+- gd 跳转定义
+- gr 跳转引用
 - gi 跳转接口实现
+- gh 显示定义
+- rn 重命名
 
 ### 书签
 
@@ -14,3 +24,15 @@
 - <leader>bn 跳转下一个书签
 - <leader>bp 跳转上一个书签
 
+### tab操作
+
+- <leader>q 关闭tab
+- <Tab> 下一个tab
+- <S-Tab> 上一个tab
+- <leader>td 移动tab到下方
+- <leader>tr 移动tab到右侧
+
+### debug
+
+- <leader>dp 设置断点
+- <leader>db 开始调试

@@ -33,12 +33,31 @@ set relativenumber
 
 set vb t_vb=
 
+" 跳转定义
+nnoremap gd :action GotoDeclaration<CR>
+" 跳转引用
+nnoremap gr :action GotoDeclaration<CR>
 " 跳转接口实现
 nnoremap gi :action GotoImplementation<CR>
+" 显示定义
+nnoremap gh :action ShowErrorDescription<CR>
+" 重命名
+nnoremap rn :action Rename<CR>
+
+" 关闭tab
+nnoremap <leader>q :tabclose<CR>
+" 下一个tab
+nnoremap <Tab> :tabnext<CR>
+" 上一个tab
+nnoremap <S-Tab> :tabprevious<CR>
+" 移动tab到下方
+nnoremap <leader>td :action MoveTabDown<CR>
+" 移动tab到右侧
+nnoremap <leader>tr :action MoveTabRight<CR>
 
 " 断点
-nnoremap <leader>bp :action ToggleLineBreakpoint<CR>
-
+nnoremap <leader>dp :action ToggleLineBreakpoint<CR>
+nnoremap <leader>db :action Debug<CR>
 
 " 书签
 nnoremap <leader>bc :action ToggleBookmark<CR>
@@ -48,3 +67,10 @@ nnoremap <leader>bl :action ShowBookmarks<CR>
 nnoremap <leader>bn :action GotoNextBookmark<CR>
 " 上一个书签
 nnoremap <leader>bp :action GotoPreviousBookmark<CR>
+
+" 搜索关键字
+nnoremap <leader>fw :action FindInPath<CR>
+" 选中所有相同关键字
+nnoremap <leader>oa :action SelectAllOccurrences<CR>
+" 选中下一个关键字
+nnoremap <leader>on :action GotoNextOccurrence<CR>
