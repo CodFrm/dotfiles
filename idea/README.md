@@ -5,12 +5,12 @@
 
 ### 常用
 
-- <leader>fw 搜索关键字
+- \<leader>fw 搜索关键字
 
 ### 选中
 > 需要是visual模式
-- <leader>a 选中所有相同关键字
-- <leader>n 选中下一个关键字
+- \<leader>a 选中所有相同关键字
+- \<leader>n 选中下一个关键字
 
 ### 代码
 
@@ -22,21 +22,21 @@
 
 ### 书签
 
-- <leader>bc 添加书签
-- <leader>bl 查看书签
-- <leader>br 重命名书签
-- <leader>bn 跳转下一个书签
-- <leader>bp 跳转上一个书签
+- \<leader>bc 添加书签
+- \<leader>bl 查看书签
+- \<leader>br 重命名书签
+- \<leader>bn 跳转下一个书签
+- \<leader>bp 跳转上一个书签
 
 ### tab操作
 
-- <leader>q 关闭tab
-- <Tab> 下一个tab
-- <S-Tab> 上一个tab
-- <leader>td 移动tab到下方
-- <leader>tr 移动tab到右侧
+- \<leader>q 关闭tab
+- \<Tab> 下一个tab
+- \<S-Tab> 上一个tab
+- \<leader>td 移动tab到下方
+- \<leader>tr 移动tab到右侧
 
 ### debug
 
-- <leader>dp 设置断点
-- <leader>db 开始调试
+- \<leader>dp 设置断点
+- \<leader>db 开始调试

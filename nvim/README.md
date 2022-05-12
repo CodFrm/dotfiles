@@ -14,16 +14,16 @@
 - djoshea/vim-autoread 自动加载
 
 ## 快捷键
-> <C>是control<⌃>,Windows为Ctrl,<leader>是空格,<S>是shift
+> \<C>是control<⌃>,Windows为Ctrl,\<leader>是空格,\<S>是shift
 > 不常用的使用<leader>
 
-- <C-h/j/k/l>切换窗口
-- <leader>th 切换主题
-- <leader>W 显示隐藏的终端
+- \<C-h/j/k/l>切换窗口
+- \<leader>th 切换主题
+- \<leader>W 显示隐藏的终端
 
 ### Nvimtree
 
-- <C-n>打开nvimtree
+- \<C-n>打开nvimtree
 - a 创建文件,如果以"/"结尾表示创建目录
 - r 更新文件名
 - d 删除文件
@@ -32,10 +32,10 @@
 - gy 复制绝对路径
 - - 跳转到上级目录
 - s 使用系统默认的软件打开文件
-- <C-v/C-h>以垂直或者水平方式打开文件
-- <C-t>新的tab中打开文件
-- <C-k>查看文件信息
-- <Tab>预览文件
+- \<C-v/C-h>以垂直或者水平方式打开文件
+- \<C-t>新的tab中打开文件
+- \<C-k>查看文件信息
+- \<Tab>预览文件
 - I 隐藏或显示隐藏文件
 - H 隐藏或者显示.文件
 - R 刷新目录树
@@ -49,10 +49,10 @@
 - gd 跳转声明
 - gr 查找引用
 - gi 查找接口定义
-- <leader>rn 重命名
+- \<leader>rn 重命名
 - gh 悬浮显示引用
-- <leader>/ 注释代码
-- <leader>fm 格式化
+- \<leader>/ 注释代码
+- \<leader>fm 格式化
 
 #### 大纲
 - :AerialOpen right 打开代码大纲
@@ -60,28 +60,28 @@
 
 ### buffer相关
 
-- <Tab> 切换buffer
-- <S-Tab> 切换上一个buffer
-- <leader>fb 查找buffer
-- <leader>bp 顶置buffer
-- <leader>bt N 跳转到第n个buffer
-- <leader>q 保存并关闭当前buffer
+- \<Tab> 切换buffer
+- \<S-Tab> 切换上一个buffer
+- \<leader>fb 查找buffer
+- \<leader>bp 顶置buffer
+- \<leader>bt N 跳转到第n个buffer
+- \<leader>q 保存并关闭当前buffer
 
 ### 查找相关
 
-- <leader>fb 搜索buffer
-- <leader>fd 搜索文件
-- <leader>fa 搜索全部文件
-- <leader>fw 关键字搜索
+- \<leader>fb 搜索buffer
+- \<leader>fd 搜索文件
+- \<leader>fa 搜索全部文件
+- \<leader>fw 关键字搜索
 
 ### git相关
 
-- <leader>gl 查看git commit
-- <leader>gt 查看git status
+- \<leader>gl 查看git commit
+- \<leader>gt 查看git status
 
 ### Debug相关
 
-- <leader>bb 设置断点
-- <leader>bB 设置条件断点
+- \<leader>bb 设置断点
+- \<leader>bB 设置条件断点
 
 
