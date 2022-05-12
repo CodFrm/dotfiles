@@ -67,10 +67,15 @@ nnoremap <leader>bl :action ShowBookmarks<CR>
 nnoremap <leader>bn :action GotoNextBookmark<CR>
 " 上一个书签
 nnoremap <leader>bp :action GotoPreviousBookmark<CR>
+" 重命名书签
+nnoremap <leader>br :action EditBookmark<CR>
 
 " 搜索关键字
 nnoremap <leader>fw :action FindInPath<CR>
+
 " 选中所有相同关键字
-nnoremap <leader>oa :action SelectAllOccurrences<CR>
+xnoremap <leader>a :action SelectAllOccurrences<CR>
 " 选中下一个关键字
-nnoremap <leader>on :action GotoNextOccurrence<CR>
+xnoremap <leader>n :action GotoNextOccurrence<CR>
+
+
