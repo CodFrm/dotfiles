@@ -19,6 +19,9 @@
 - gi 跳转接口实现
 - gh 显示定义
 - rn 重命名
+- fm 格式化代码
+- \<leader>ne 下一个错误
+- \<leader>pe 上一个错误
 
 ### 书签
 
@@ -35,8 +38,22 @@
 - \<S-Tab> 上一个tab
 - \<leader>td 移动tab到下方
 - \<leader>tr 移动tab到右侧
+- \<leader>ns 下一个切分窗口
+- \<leader>ps 上一个切分窗口
+- \<leader>sd 取消切分
+- \<leader>sh 垂直切分
+- \<leader>sv 水平切分
 
 ### debug
 
 - \<leader>dp 设置断点
 - \<leader>db 开始调试
+- \\s 单步执行(不进入函数)
+- \\S 单步执行(进入函数)
+- \<leader>ds 继续运行
+- \<leader>dS 停止调试
+
+### 其他
+
+- \<leader>cr 复制引用
+

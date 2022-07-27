@@ -43,6 +43,8 @@ nnoremap gi :action GotoImplementation<CR>
 nnoremap gh :action ShowErrorDescription<CR>
 " 重命名
 nnoremap rn :action Rename<CR>
+" 格式化代码
+nnoremap fm :action ReformatCode<CR>
 
 " 关闭tab
 nnoremap <leader>q :tabclose<CR>
@@ -57,7 +59,17 @@ nnoremap <leader>tr :action MoveTabRight<CR>
 
 " 断点
 nnoremap <leader>dp :action ToggleLineBreakpoint<CR>
+" 单步执行(不进入函数)
+nnoremap \s :action StepOver<CR>
+" 单步执行(进入函数)
+nnoremap \S :action StepIn<CR>
+" 继续运行
+nnoremap <leader>ds :action Resume<CR>
+" 开启调试
 nnoremap <leader>db :action Debug<CR>
+" 停止调试
+nnoremap <leader>dS :action Stop<CR>
+
 
 " 书签
 nnoremap <leader>bc :action ToggleBookmark<CR>
@@ -76,6 +88,24 @@ nnoremap <leader>fw :action FindInPath<CR>
 " 选中所有相同关键字
 xnoremap <leader>a :action SelectAllOccurrences<CR>
 " 选中下一个关键字
-xnoremap <leader>n :action GotoNextOccurrence<CR>
+xnoremap <leader>n :action SelectNextOccurrence<CR>
 
+" 复制引用
+nnoremap <leader>cr :action CopyReference<CR>
+
+" 下一个错误
+nnoremap <leader>ne :action GotoNextError<CR>
+" 上一个错误
+nnoremap <leader>pe :action GotoPreviousError<CR>
+
+" 下一个切分窗口
+nnoremap <leader>ns :action NextSplitter<CR>
+" 上一个切分窗口
+nnoremap <leader>ps :action PrevSplitter<CR>
+" 取消切分
+nnoremap <leader>sd :action Unsplit<CR>
+" 垂直切分
+nnoremap <leader>sh :action SplitHorizontally<CR>
+" 水平切分
+nnoremap <leader>sv :action SplitVertically<CR>
 
