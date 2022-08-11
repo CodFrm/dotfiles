@@ -43,6 +43,7 @@ M.plugins = {
       show_current_context = true,
       show_current_context_start = true,
     },
+    -- 错误提示
     ["akinsho/bufferline.nvim"] = {
       options = {
         diagnostics = "nvim_lsp",

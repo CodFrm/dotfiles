@@ -1,0 +1,98 @@
+"" Source your .vimrc
+"source ~/.vimrc
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+let mapleader = " "
+
+set nu
+set relativenumber
+
+set vb t_vb=
+
+" 关闭tab
+nnoremap <leader>q :wq<CR>
+" 下一个tab
+nnoremap <Tab> :tabnext<CR>
+" 上一个tab
+nnoremap <S-Tab> :tabprevious<CR>
+" 移动tab到下方
+nnoremap <leader>td :action MoveTabDown<CR>
+" 移动tab到右侧
+nnoremap <leader>tr :action MoveTabRight<CR>
+
+" 断点
+nnoremap <leader>dp :action ToggleLineBreakpoint<CR>
+" 单步执行(不进入函数)
+nnoremap \s :action StepOver<CR>
+" 单步执行(进入函数)
+nnoremap \S :action StepIn<CR>
+" 继续运行
+nnoremap <leader>ds :action Resume<CR>
+" 开启调试
+nnoremap <leader>db :action Debug<CR>
+" 停止调试
+nnoremap <leader>dS :action Stop<CR>
+
+
+" 书签
+nnoremap <leader>bc :action ToggleBookmark<CR>
+" 显示书签
+nnoremap <leader>bl :action ShowBookmarks<CR>
+" 下一个书签
+nnoremap <leader>bn :action GotoNextBookmark<CR>
+" 上一个书签
+nnoremap <leader>bp :action GotoPreviousBookmark<CR>
+" 重命名书签
+nnoremap <leader>br :action EditBookmark<CR>
+
+" 搜索关键字
+nnoremap <leader>fw :action FindInPath<CR>
+
+" 选中所有相同关键字
+xnoremap <leader>a :action SelectAllOccurrences<CR>
+" 选中下一个关键字
+xnoremap <leader>n :action SelectNextOccurrence<CR>
+
+" 复制引用
+nnoremap <leader>cr :action CopyReference<CR>
+
+" 下一个错误
+nnoremap <leader>ne :action GotoNextError<CR>
+" 上一个错误
+nnoremap <leader>pe :action GotoPreviousError<CR>
+
+" 下一个切分窗口
+nnoremap <leader>ns :action NextSplitter<CR>
+" 上一个切分窗口
+nnoremap <leader>ps :action PrevSplitter<CR>
+" 取消切分
+nnoremap <leader>sd :action Unsplit<CR>
+" 垂直切分
+nnoremap <leader>sh :action SplitHorizontally<CR>
+" 水平切分
+nnoremap <leader>sv :action SplitVertically<CR>
+

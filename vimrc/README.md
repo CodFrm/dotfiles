@@ -2,6 +2,15 @@
 
 ## ideavim配置
 > nvim 太难配置了,养成的感觉主要还是键位,不如直接使用ideavim了
+> 
+> 20220811年记:更新了一次插件和Nvchad后,我的nvim炸了,宣布放弃T_T
+
+使用:actionlist可查看所有命令
+
+## vscode配置
+vscode安装vim插件后开启首选项:`vim.vimrc.enable`,然后配置`vim.vimrc.path`为`~/.vscodevimrc`
+
+可使用[setting.json](setting.json)替换配置
 
 ### 常用
 
