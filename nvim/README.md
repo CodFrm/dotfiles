@@ -1,6 +1,6 @@
 # nvim 配置
 
-基于[Nvchad](https://nvchad.github.io/)的配置
+基于[Nvchad](https://nvchad.github.io/)的配置,本配置参考了[siduck/dotfiles](https://github.com/siduck/dotfiles)
 
 ## 插件
 
@@ -78,10 +78,3 @@
 
 - \<leader>gl 查看git commit
 - \<leader>gt 查看git status
-
-### Debug相关
-
-- \<leader>bb 设置断点
-- \<leader>bB 设置条件断点
-
-

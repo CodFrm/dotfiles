@@ -1,12 +1,13 @@
 local M = {}
 
+-- 自定义键位
 M.custom = {
     n = {
         ["<leader>cc"] = {":Telescope <CR>", "打开Telescope"},
-        ["<leader>q"] = {":q <CR>", "退出"}
     }
 }
 
+-- 后续的都是插件相关的配置
 M.telescope = {
     n = {
         ["<leader>fb"] = {"<cmd>:Telescope buffers <CR>", "搜索buffer"},
@@ -29,7 +30,9 @@ M.lsp = {
         ["gh"] = {"<cmd>lua vim.lsp.buf.hover() <CR>", "显示定义"},
         ["<leader>rn"] = {"<cmd>lua vim.lsp.buf.rename() <CR>", "重命名"},
         ["gr"] = {"<cmd>:Telescope lsp_references <CR>", "查找引用"},
-        ["gi"] = {"<cmd>lua vim.lsp.buf.implementation() <CR>", "跳转接口定义"}
+        ["gi"] = {"<cmd>lua vim.lsp.buf.implementation() <CR>", "跳转接口定义"},
+        ["<leader>ne"]={"<cmd>lua vim.lsp.diagnostic.goto_next() <CR>","下一个错误"},
+        ["<leader>pe"]={"<cmd>lua vim.lsp.diagnostic.goto_prev() <CR>","上一个错误"},
     },
     v = {
         ["ca"] = {"<cmd>lua vim.lsp.buf.range_code_action() <CR>", "修复建议"}
@@ -41,17 +44,10 @@ M.bufferline = {
         ["<leader>bp"] = {"<cmd>:BufferLineTogglePin <CR>", "顶置buffer"},
         ["<leader>bu"] = {"<cmd>:BufferLineMovePrev <CR>", "移动到上一个"},
         ["<leader>bd"] = {"<cmd>:BufferLineMoveNext <CR>", "移动到下一个"},
-        ["bt"] = {":BufferLineGoToBuffer ", "跳转到第n个buffer"},
-        ["<leader>q"] = {"<cmd>:w | :lua require('bufdelete').bufdelete(0, true) <CR>", "删除当前buffer"}
-    }
-}
-
-M.aerial = {}
-
-M.dap = {
-    n = {
-        ["<leader>bb"] = {"<cmd>lua require'dap'.toggle_breakpoint() <CR>", "设置断点"},
-        ["<leader>bB"] = {"<cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: ')) <CR>", "设置条件断点"}
+        ["<leader>bt"] = {"<cmd> TbufPick <CR>", "跳转到指定buffer"},
+        ["<leader>q"] = { function()
+            require("core.utils").close_buffer()
+          end, "删除当前buffer"}
     }
 }
 
