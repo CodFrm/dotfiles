@@ -29,8 +29,8 @@ vscode安装vim插件后开启首选项:`vim.vimrc.enable`,然后配置`vim.vimr
 - gh 显示定义
 - rn 重命名
 - fm 格式化代码
-- \<leader>ne 下一个错误
-- \<leader>pe 上一个错误
+- [e 下一个错误
+- ]e 上一个错误
 
 ### 书签
 

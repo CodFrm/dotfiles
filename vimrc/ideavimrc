@@ -94,9 +94,9 @@ xnoremap <leader>n :action SelectNextOccurrence<CR>
 nnoremap <leader>cr :action CopyReference<CR>
 
 " 下一个错误
-nnoremap <leader>ne :action GotoNextError<CR>
+nnoremap [e :action GotoNextError<CR>
 " 上一个错误
-nnoremap <leader>pe :action GotoPreviousError<CR>
+nnoremap ]e :action GotoPreviousError<CR>
 
 " 下一个切分窗口
 nnoremap <leader>ns :action NextSplitter<CR>

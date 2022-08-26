@@ -11,10 +11,11 @@ M.treesitter = {
     "json",
     "toml",
     "markdown",
+    "markdown_inline",
     "c",
     "bash",
     "lua",
-    "go"
+    "go",
   },
 }
 
@@ -84,13 +85,24 @@ M.mason = {
     "deno",
     "emmet-ls",
     "json-lsp",
-    
+
     -- go
     "gopls",
+
+    -- markdown
+    "markdownlint",
 
     -- shell
     "shfmt",
     "shellcheck",
+  },
+}
+
+M.telescope = {
+  pickers = {
+    ["ui-select"] = {
+      theme = "cursor",
+    },
   },
 }
 
