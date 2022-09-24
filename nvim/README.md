@@ -4,7 +4,18 @@
 
 基于[Nvchad](https://nvchad.github.io/)的配置,本配置参考了[siduck/dotfiles](https://github.com/siduck/dotfiles)
 
-## 插件
+## 常见命令
+
+```bash
+# 更新最新neovim
+curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz
+tar xzf nvim-macos.tar.gz
+./nvim-macos/bin/nvim
+# 运行日志
+nvim --startuptime nvim.log
+```
+
+# 插件
 
 > 此处是比较老的记录了，详情请看[plugins/init.lua](./plugins/init.lua)文件
 
@@ -64,11 +75,7 @@
 - \<leader>fm 格式化
 - [e 查看下一个错误
 - ]e 查看上一个错误
-
-#### 大纲
-
-- :AerialOpen right 打开代码大纲
-- :AerialClose 关闭代码大纲
+- <leader>a 打开代码大纲
 
 ### buffer相关
 
@@ -76,6 +83,8 @@
 - \<S-Tab> 切换上一个buffer
 - \<leader>fb 查找buffer
 - \<leader>bp 顶置buffer
+- [b 移动到下一个
+- ]b 移动到上一个
 - \<leader>bt N 跳转到第n个buffer
 - \<leader>q 保存并关闭当前buffer
 

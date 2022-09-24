@@ -1,4 +1,12 @@
 return {
+
+  ["neovim/nvim-lspconfig"] = {
+    config = function()
+      require "plugins.configs.lspconfig"
+      require "custom.plugins.lspconfig"
+    end,
+  },
+
   -- autoclose tags in html, jsx etc
   ["windwp/nvim-ts-autotag"] = {
     ft = { "html", "javascriptreact" },
@@ -51,33 +59,22 @@ return {
     end,
   },
 
-  -- notes stuff
+  -- notes & todo stuff
   ["nvim-neorg/neorg"] = {
+    tag = "0.0.12",
     ft = "norg",
     after = "nvim-treesitter",
+    setup = function()
+      require("custom.plugins.neorg").autocmd()
+    end,
     config = function()
-      require "custom.plugins.neorg"
+      require("custom.plugins.neorg").setup()
     end,
   },
 
   ["goolord/alpha-nvim"] = {
     disable = false,
     cmd = "Alpha",
-  },
-
-  ["neovim/nvim-lspconfig"] = {
-    config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.plugins.lspconfig"
-    end,
-  },
-
-  -- Telescope code action
-  ["nvim-telescope/telescope-ui-select.nvim"] = {
-    after = "telescope.nvim",
-    config = function()
-      require("telescope").load_extension "ui-select"
-    end,
   },
 
   -- 媒体文件查看
@@ -116,7 +113,7 @@ return {
   },
   -- git工具
   ["tanvirtin/vgit.nvim"] = {
-    after="base46",
+    after = "base46",
     config = function()
       require("vgit").setup()
     end,
@@ -155,4 +152,16 @@ return {
       }
     end,
   },
+  -- golang
+  ["ray-x/go.nvim"] = {
+    after = "nvim-lspconfig",
+    config = function()
+      require("go").setup()
+    end,
+  },
+  ["ray-x/guihua.lua"] = {},
+  -- github copilot
+  ["github/copilot.vim"] = {},
+  -- tagbar
+  ["liuchengxu/vista.vim"] = {},
 }

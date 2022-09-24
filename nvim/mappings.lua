@@ -25,7 +25,7 @@ M.telescope = {
 M.lsp = {
   n = {
     ["ca"] = { "<cmd>Lspsaga code_action <CR>", "修复建议" },
-    ["<leader>fm"] = { "<cmd>lua vim.lsp.buf.formatting_sync() <CR>", "格式化" },
+    ["<leader>fm"] = { "<cmd>lua vim.lsp.buf.format() <CR>", "格式化" },
     ["gD"] = { "<cmd>lua vim.lsp.buf.declaration() <CR>", "跳转声明" },
     ["gd"] = { "<cmd>Telescope lsp_definitions <CR>", "跳转定义" },
     ["gh"] = { "<cmd>Lspsaga hover_doc <CR>", "显示定义" },
@@ -35,7 +35,7 @@ M.lsp = {
     ["[e"] = { "<cmd>Lspsaga diagnostic_jump_next <CR>", "下一个错误" },
     ["]e"] = { "<cmd>Lspsaga diagnostic_jump_prev <CR>", "上一个错误" },
     ["<leader>e"] = { "<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>", "所有错误" },
-    ["<leader>o"] = { "<cmd>LSoutlineToggle <CR>", "大纲" },
+    ["<leader>a"] = { "<cmd>Vista nvim_lsp <CR>", "大纲" },
   },
   v = {
     ["ca"] = { "<cmd><C-U>Lspsaga range_code_action <CR>", "修复建议" },
@@ -45,12 +45,12 @@ M.lsp = {
 M.bufferline = {
   n = {
     ["<leader>bp"] = { "<cmd>:BufferLineTogglePin <CR>", "顶置buffer" },
-    ["<leader>bu"] = { "<cmd>:BufferLineMovePrev <CR>", "移动到上一个" },
-    ["<leader>bd"] = { "<cmd>:BufferLineMoveNext <CR>", "移动到下一个" },
+    ["[b"] = { "<cmd>:BufferLineMoveNext <CR>", "移动到下一个" },
+    ["]b"] = { "<cmd>:BufferLineMovePrev <CR>", "移动到上一个" },
     ["<leader>bt"] = { "<cmd> TbufPick <CR>", "跳转到指定buffer" },
     ["<leader>q"] = {
       function()
-        require("core.utils").close_buffer()
+        require("nvchad_ui.tabufline").close_buffer()
       end,
       "删除当前buffer",
     },

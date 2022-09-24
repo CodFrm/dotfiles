@@ -10,7 +10,8 @@ local sources = {
 
   -- webdev stuff
   b.formatting.deno_fmt,
-  b.formatting.prettier.with { filetypes = { "html", "markdown", "css" } },
+  b.formatting.prettier,
+  b.formatting.eslint_d,
 
   -- Lua
   b.formatting.stylua,
@@ -25,6 +26,8 @@ local sources = {
   -- golang
   b.formatting.gofmt,
   b.formatting.goimports,
+  b.formatting.goimports_reviser,
+  b.formatting.golines,
   b.diagnostics.golangci_lint,
 }
 

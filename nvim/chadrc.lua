@@ -26,4 +26,5 @@ M.ui = {
 -- 键位配置
 M.mappings = require "custom.mappings"
 
+
 return M

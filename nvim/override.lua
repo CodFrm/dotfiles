@@ -85,6 +85,8 @@ M.mason = {
     "deno",
     "emmet-ls",
     "json-lsp",
+    "eslint-lsp",
+    "eslint_d",
 
     -- go
     "gopls",
@@ -95,14 +97,6 @@ M.mason = {
     -- shell
     "shfmt",
     "shellcheck",
-  },
-}
-
-M.telescope = {
-  pickers = {
-    ["ui-select"] = {
-      theme = "cursor",
-    },
   },
 }
 
