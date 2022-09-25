@@ -73,8 +73,8 @@ nvim --startuptime nvim.log
 - gh 悬浮显示引用
 - \<leader>/ 注释代码
 - \<leader>fm 格式化
-- [e 查看下一个错误
-- ]e 查看上一个错误
+- [e 查看上一个错误
+- ]e 查看下一个错误
 - <leader>a 打开代码大纲
 
 ### buffer相关
@@ -83,8 +83,8 @@ nvim --startuptime nvim.log
 - \<S-Tab> 切换上一个buffer
 - \<leader>fb 查找buffer
 - \<leader>bp 顶置buffer
-- [b 移动到下一个
-- ]b 移动到上一个
+- [b 移动到上一个
+- ]b 移动到下一个
 - \<leader>bt N 跳转到第n个buffer
 - \<leader>q 保存并关闭当前buffer
 
@@ -99,8 +99,8 @@ nvim --startuptime nvim.log
 
 - \<leader>gl 查看git commit
 - \<leader>gt 查看git status
-- [c 跳到下一个更改
-- ]c 跳到上一个更改
+- [c 跳到上一个更改
+- ]c 跳到下一个更改
 - \<leader>gc 查看变更
 - \<leader>gh 查看文件历史变更
 - \<leader>gr 重置当前块
