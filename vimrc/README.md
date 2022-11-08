@@ -1,9 +1,7 @@
 # idea配置
 
 ## ideavim配置
-> nvim 太难配置了,养成的感觉主要还是键位,不如直接使用ideavim了
-> 
-> 20220811年记:更新了一次插件和Nvchad后,我的nvim炸了,宣布放弃T_T
+> nvim 太难配置了,养成的感觉主要还是键位,可以考虑使用ideavim
 
 使用:actionlist可查看所有命令
 

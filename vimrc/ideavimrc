@@ -31,6 +31,8 @@ let mapleader = " "
 set nu
 set relativenumber
 
+set NERDTree
+
 set vb t_vb=
 
 " 跳转定义
@@ -42,9 +44,11 @@ nnoremap gi :action GotoImplementation<CR>
 " 显示定义
 nnoremap gh :action ShowErrorDescription<CR>
 " 重命名
-nnoremap rn :action Rename<CR>
+nnoremap rn :action RenameElement<CR>
 " 格式化代码
 nnoremap fm :action ReformatCode<CR>
+" codeAction
+nnoremap <leader>ca :action	
 
 " 关闭tab
 nnoremap <leader>q :tabclose<CR>
@@ -75,10 +79,10 @@ nnoremap <leader>dS :action Stop<CR>
 nnoremap <leader>bc :action ToggleBookmark<CR>
 " 显示书签
 nnoremap <leader>bl :action ShowBookmarks<CR>
-" 下一个书签
-nnoremap <leader>bn :action GotoNextBookmark<CR>
 " 上一个书签
-nnoremap <leader>bp :action GotoPreviousBookmark<CR>
+nnoremap <leader>[b :action GotoPreviousBookmark<CR>
+" 下一个书签
+nnoremap <leader>]b :action GotoNextBookmark<CR>
 " 重命名书签
 nnoremap <leader>br :action EditBookmark<CR>
 
@@ -93,10 +97,10 @@ xnoremap <leader>n :action SelectNextOccurrence<CR>
 " 复制引用
 nnoremap <leader>cr :action CopyReference<CR>
 
-" 下一个错误
-nnoremap [e :action GotoNextError<CR>
 " 上一个错误
-nnoremap ]e :action GotoPreviousError<CR>
+nnoremap [e :action GotoPreviousError<CR>
+" 下一个错误
+nnoremap ]e :action GotoNextError<CR>
 
 " 下一个切分窗口
 nnoremap <leader>ns :action NextSplitter<CR>
@@ -109,3 +113,5 @@ nnoremap <leader>sh :action SplitHorizontally<CR>
 " 水平切分
 nnoremap <leader>sv :action SplitVertically<CR>
 
+" 控制目录树
+nnoremap <C-n> :NERDTreeToggle<CR>
