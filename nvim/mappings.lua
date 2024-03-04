@@ -25,9 +25,9 @@ M.telescope = {
   },
 }
 
-M.lsp = {
+M.lspconfig = {
   n = {
-    ["ca"] = { "<cmd>Lspsaga code_action <CR>", "修复建议" },
+    ["<leader>ca"] = { "<cmd>Lspsaga code_action <CR>", "修复建议" },
     ["<leader>fm"] = { "<cmd>lua vim.lsp.buf.format() <CR>", "格式化" },
     ["gD"] = { "<cmd>lua vim.lsp.buf.declaration() <CR>", "跳转声明" },
     ["gd"] = { "<cmd>Telescope lsp_definitions <CR>", "跳转定义" },
@@ -39,9 +39,6 @@ M.lsp = {
     ["]e"] = { "<cmd>Lspsaga diagnostic_jump_next <CR>", "下一个错误" },
     ["<leader>e"] = { "<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>", "所有错误" },
     ["<leader>a"] = { "<cmd>Vista nvim_lsp <CR>", "大纲" },
-  },
-  v = {
-    ["ca"] = { "<cmd><C-U>Lspsaga range_code_action <CR>", "修复建议" },
   },
 }
 
@@ -78,7 +75,7 @@ function moveItemLeft(originTbl, n)
   return originTbl
 end
 
-M.bufferline = {
+M.tabufline = {
   n = {
     ["<leader>bp"] = { "<cmd>:BufferLineTogglePin <CR>", "顶置buffer" },
     ["[b"] = {
@@ -99,16 +96,15 @@ M.bufferline = {
       end,
       "移动到下一个tab",
     },
-    ["<leader>bt"] = { "<cmd> TbufPick <CR>", "跳转到指定buffer" },
     ["<leader>q"] = {
       function()
-        require("nvchad_ui.tabufline").close_buffer()
+        require("nvchad.tabufline").close_buffer()
       end,
       "删除当前buffer",
     },
     ["<leader>Q"] = {
       function()
-        require("nvchad_ui.tabufline").closeAllBufs()
+        require("nvchad.tabufline").closeAllBufs()
       end,
       "删除所有buffer",
     },

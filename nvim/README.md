@@ -1,6 +1,7 @@
 [TOC]
 
 # nvim 配置
+> 啊啊啊啊，每次更新就换个包管理器
 
 基于[Nvchad](https://nvchad.github.io/)的配置,本配置参考了[siduck/dotfiles](https://github.com/siduck/dotfiles)
 
@@ -17,26 +18,18 @@ nvim --startuptime nvim.log
 
 # 插件
 
-> 此处是比较老的记录了，详情请看[plugins/init.lua](./plugins/init.lua)文件
+详情请看[plugins/init.lua](./plugins/init.lua)文件
 
-- jose-elias-alvarez/null-ls.nvim 代码格式化
-- nvim-telescope/telescope-ui-select.nvim Telescope codeAction
-- williamboman/nvim-lsp-installer lsp 安装工具箱
-- folke/todo-comments.nvim TODO 高亮
-- Shatur/neovim-session-manager session 管理工具
-- BurntSushi/ripgrep Telescope live_grep 工具
-- Pocco81/AutoSave.nvim 自动保存
-- djoshea/vim-autoread 自动加载
-- tanvirtin/vgit.nvim git工具
-- iamcco/markdown-preview.nvim markdown预览工具
 
 ## 快捷键
 
-> \<C>是control<⌃>,Windows为Ctrl,\<leader>是空格,\<S>是shift 不常用的使用<leader>
+> \<C>是control,Windows为Ctrl,\<leader>是空格,\<S>是shift,\<A>是alt 不常用的使用<leader>
 
 - \<C-h/j/k/l>切换窗口
 - \<leader>th 切换主题
+- \<leader>h 打开终端
 - \<leader>W 显示隐藏的终端
+- \<leader>ch 显示按键
 
 ## 常用指令
 
@@ -53,7 +46,7 @@ nvim --startuptime nvim.log
 - gy 复制绝对路径
 - 跳转到上级目录
 - s 使用系统默认的软件打开文件
-- \<C-v/C-h>以垂直或者水平方式打开文件
+- \<C-v/C-x>以垂直或者水平方式打开文件
 - \<C-t>新的tab中打开文件
 - \<C-k>查看文件信息
 - \<Tab>预览文件
@@ -64,7 +57,7 @@ nvim --startuptime nvim.log
 
 ### 代码相关快捷键
 
-- ca 修复建议
+- \<leader>ca 修复建议
 - gD 跳转定义
 - gd 跳转声明
 - gr 查找引用
@@ -82,10 +75,8 @@ nvim --startuptime nvim.log
 - \<Tab> 切换buffer
 - \<S-Tab> 切换上一个buffer
 - \<leader>fb 查找buffer
-- \<leader>bp 顶置buffer
 - [b 移动到上一个
 - ]b 移动到下一个
-- \<leader>bt N 跳转到第n个buffer
 - \<leader>q 保存并关闭当前buffer
 
 ### 查找相关
@@ -110,3 +101,4 @@ nvim --startuptime nvim.log
 ## 常用命令
 
 - MarkdownPreview 预览markdown文件
+- NvChadUpdate 更新编辑器
