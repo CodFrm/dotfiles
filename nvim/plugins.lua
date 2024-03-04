@@ -57,17 +57,6 @@ return {
         end
     },
 
-    -- 非激活窗口暗色
-    {
-        "andreadev-it/shade.nvim",
-		lazy = false,
-        config = function()
-            require("shade").setup {
-                exclude_filetypes = {"NvimTree"}
-            }
-        end
-    },
-
     -- 自动保存
     {
         "pocco81/auto-save.nvim",

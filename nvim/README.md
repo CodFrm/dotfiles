@@ -5,7 +5,7 @@
 
 基于[Nvchad](https://nvchad.github.io/)的配置,本配置参考了[siduck/dotfiles](https://github.com/siduck/dotfiles)
 
-## 常见命令
+## 安装
 
 ```bash
 # 更新最新neovim
@@ -18,10 +18,11 @@ nvim --startuptime nvim.log
 
 # 插件
 
-详情请看[plugins/init.lua](./plugins/init.lua)文件
+详情请看[plugins.lua](./plugins.lua)文件
 
+自定义的指令在[mappings.lua](./mappings.lua)中, 可使用\<leader>ch查看
 
-## 快捷键
+## 常用指令
 
 > \<C>是control,Windows为Ctrl,\<leader>是空格,\<S>是shift,\<A>是alt 不常用的使用<leader>
 
@@ -30,10 +31,6 @@ nvim --startuptime nvim.log
 - \<leader>h 打开终端
 - \<leader>W 显示隐藏的终端
 - \<leader>ch 显示按键
-
-## 常用指令
-
-> 自定义的指令在[mappings.lua](./mappings.lua)中
 
 ### Nvimtree
 
@@ -102,3 +99,4 @@ nvim --startuptime nvim.log
 
 - MarkdownPreview 预览markdown文件
 - NvChadUpdate 更新编辑器
+
