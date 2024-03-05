@@ -33,12 +33,12 @@ M.lspconfig = {
     ["gd"] = { "<cmd>Telescope lsp_definitions <CR>", "跳转定义" },
     ["gh"] = { "<cmd>Lspsaga hover_doc <CR>", "显示定义" },
     ["<leader>rn"] = { "<cmd>Lspsaga rename <CR>", "重命名" },
-    ["gr"] = { "<cmd>:Telescope lsp_references <CR>", "查找引用" },
-    ["gi"] = { "<cmd>Lspsaga lsp_finder <CR>", "跳转接口定义" },
+    ["gr"] = { "<cmd>Lspsaga finder ref <CR>", "查找引用" },
+    ["gi"] = { "<cmd>Lspsaga finder imp <CR>", "跳转接口定义" },
     ["[e"] = { "<cmd>Lspsaga diagnostic_jump_prev <CR>", "上一个错误" },
     ["]e"] = { "<cmd>Lspsaga diagnostic_jump_next <CR>", "下一个错误" },
     ["<leader>e"] = { "<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>", "所有错误" },
-    ["<leader>a"] = { "<cmd>Vista nvim_lsp <CR>", "大纲" },
+    ["<leader>a"] = { "<cmd>Lspsaga outline <CR>", "大纲" },
   },
 }
 

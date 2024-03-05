@@ -32,6 +32,25 @@ nvim --startuptime nvim.log
 - \<leader>W 显示隐藏的终端
 - \<leader>ch 显示按键
 
+### Telescope
+
+- \<C-x>水平分割打开文件
+- \<C-v>垂直分割打开文件
+- \<C-t>新的tab中打开文件
+- \<C-u>预览窗口中向上滚动
+- \<C-d>预览窗口中向下滚动
+- \<Tab>向下移动
+- \<S-Tab>向上移动
+
+### LSPSaga
+
+- o 打开
+- x 水平分割打开
+- v 垂直分割打开
+- q 退出
+- r 新tab中打开
+
+
 ### Nvimtree
 
 - \<C-n>打开nvimtree
